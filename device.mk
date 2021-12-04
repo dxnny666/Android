@@ -1,8 +1,8 @@
-PRODUCT_DEVICE := it1 # кодовое имя устройства
-PRODUCT_NAME := mirea_it1 # кодовое имя продукта, указывается в ro.product.name в файле build.prop скомпилированного образа
-PRODUCT_BRAND := MIREA # бренд, указывается в ro.product.brand в файле build.prop скомпилированного образа
-PRODUCT_MODEL := MIREA IT1 # модель, указывается в ro.product.model в файле build.prop скомпилированного образа
-PRODUCT_MANUFACTURER := MIREA # производитель, указывается в ro.product.manufacturer в файле build.prop скомпилированного образа
+PRODUCT_DEVICE := it1 
+PRODUCT_NAME := mirea_it1 
+PRODUCT_BRAND := MIREA 
+PRODUCT_MODEL := MIREA IT1 
+PRODUCT_MANUFACTURER := MIREA 
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
@@ -26,11 +26,11 @@ PRODUCT_PACKAGES += \
 	wmiconfig
 
 PRODUCT_PROPERTY_OVERRIDES := \
-	ro.product.first_api_level=10 # переопределение уровня API Android,с которым было выпущено устройство
+	ro.product.first_api_level=10 
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	ro.secure=0 \ #Отключение режима безопасной загрузки
+	ro.secure=0 \ 
 
-# Resolution settings
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
